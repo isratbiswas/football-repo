@@ -1,0 +1,198 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/*---------------------------
+     Main Section Style 
+---------------------------*/
+
+/*-----------------------
+    Higlight Section 
+-----------------------*/
+
+.head-line{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #040480;
+    padding: 5% 0% 3% 0%;
+}
+
+.color{
+    color: orange;
+}
+
+.title h1{
+    font-size: 250%;
+    font-weight: 700;
+    color: white;
+}
+
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: tomato;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: yellow;
+    color: red;
+}
+
+.head-line img{
+    width: 100%;
+    transition: width 1s;
+}
+
+.head-line img:hover{
+    width: 40%;
+}
+
+/*--------------------------
+     Main Fast Section 
+--------------------------*/
+
+.master-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8% 0% 18% 0%;
+}
+.container{
+    width: 950px;
+}
+
+.players{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2%;
+}
+
+.player{
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 40px gray;
+}
+
+.player-img img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.player-title h1{
+    color: orange;
+    font-weight: 700;
+    font-size: 200%;
+}
+
+/*---------------------
+     Secend Section 
+---------------------*/
+
+
+.subscribe{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 8%;
+}
+
+.sub-title h1{
+    font-size:100%;
+    font-weight: 700;
+}
+
+.subscrib-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+/*----------------------
+     Footer Section 
+----------------------*/
+footer{
+    text-align: center;
+}
+
+footer img{
+    width: 30%;
+}
+
+footer p{
+    color: #979191;
+}
+
+.social i{
+    color: #979191;
+    margin: 0% 1%;
+}
+
+
+/*----------------------
+      Media Quaris 
+----------------------*/
+
+@media only screen and ( max-width: 576px) {
+
+    /* Head-Line */
+
+    .head-line{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #040480;
+        padding: 5% 0% 3% 0%;
+    }
+
+    .title{
+        text-align: center;
+    }
+
+    .head-line img{
+        width: 70%;
+        padding: 15% 0%;
+        transition: width 1s;
+    }
+
+    .head-line img:hover{
+        width: 95%;
+    }
+
+    /* Section Start */
+
+    /* Fast Section */
+
+    .master-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 8% 0% 18% 0%;
+    }
+
+    .container{
+        width: 100%;
+        padding-bottom: 15%;
+    }
+    
+    .players{
+        display: flex;
+        justify-content: space-around;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1%;
+    }
+
+    /* Secend Section */
+
+    .subscribe{
+        display: none;
+    }
+
+  /* footer-section */
+}
